@@ -1,61 +1,165 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="favicon.ico" />
-<title>ProGaming-bootstrap</title>
-<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap-theme.css"/>
-<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap-theme.min.css"/>
-<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
-
-<style>
-#navegacion{
-	margin-top:1em;
-	margin-bottom:2em;
-}
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /*  background color negro, testo en blanco and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* En pantaña pequela, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-    <header>
-    	<!--<div class="col-md-5"></div>-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <nav class="col-sm-2 sidenav">
+      <p><a href="#">Link1</a></p>
+      <p><a href="#">Link2</a></p>
+      <p><a href="#">Link3</a></p>
+    </nav>
+	
+    <section class="col-sm-8 text-left"> 
+      <article>
+		  <div class="col-sm-4 col-md-4 col-lg-4">
+			<div class="thumbnail">
+			  <img src="tarjetagrafica.png" alt="tarjetagrafica">
+			  <div class="caption">
+				<h3>TNueva Grafica</h3>
+				<p>La nueva grafica de N-videa nos presenta grandes cambios...</p>
+				<p>
+				  <a href="#" class="btn btn-primary" role="button">Me Gusta</a>
+				  <a href="#" class="btn btn-default" role="button">Leer más</a>
+				</p>
+			  </div>
+			</div>
+		  </div>		
+      </article>
         
-        <div class="col-md-5 col-md-1">       
-        <img src="logo chico.png" width="100" height="100" />
-        </div>
-        
-        <!--<div class="col-md-5"></div>-->
-        
-        <div id="navegacion" class="col-lg-12">
-          <ul class="nav nav-tabs nav-justified">
-            <li class="active"><a href="#">Opcion 1</a></li>
-            <li><a href="#">Opcion 2</a></li>
-            <li><a href="#">Opcion 3</a></li>
-            <li><a href="#">Opcion 4</a></li>
-          </ul>
-        </div>
-    </header>    
-        <nav class="col-lg-3">
-        <p>Navegacion</p>
-        </nav>
-        
-        <section class="col-lg-6">
-            <p>Seccion</p>
-            
-            <article>
-                <p>articulo</p>
-            </article>
-                
-        </section>
-        
-        <aside class="col-lg-3">
-            <p>contenido derecho</p>
-        </aside>
-        
-        <footer class="col-lg-12">
-        <p>Pie de pagina</p>
-        </footer>
-    </div> 
+		
+		
+		<article>  
+		  <div class="col-sm-4 col-md-4">
+			<div class="thumbnail">
+			  <img src="tarjetagrafica.png" alt="tarjetagrafica">
+			  <div class="caption">
+				<h3>TNueva Grafica</h3>
+				<p>La nueva grafica de N-videa nos presenta grandes cambios...</p>
+				<p>
+				  <a href="#" class="btn btn-primary" role="button">Me Gusta</a>
+				  <a href="#" class="btn btn-default" role="button">Leer más</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+      </article>
+	  
+	  <article>  
+		  <div class="col-sm-4 col-md-4">
+			<div class="thumbnail">
+			  <img src="tarjetagrafica.png" alt="tarjetagrafica">
+			  <div class="caption">
+				<h3>TNueva Grafica</h3>
+				<p>La nueva grafica de N-videa nos presenta grandes cambios...</p>
+				<p>
+				  <a href="#" class="btn btn-primary" role="button">Me Gusta</a>
+				  <a href="#" class="btn btn-default" role="button">Leer más</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+      </article>
+	  
+	  <article>  
+		  <div class="col-sm-4 col-md-4">
+			<div class="thumbnail">
+			  <img src="tarjetagrafica.png" alt="tarjetagrafica">
+			  <div class="caption">
+				<h3>TNueva Grafica</h3>
+				<p>La nueva grafica de N-videa nos presenta grandes cambios...</p>
+				<p>
+				  <a href="#" class="btn btn-primary" role="button">Me Gusta</a>
+				  <a href="#" class="btn btn-default" role="button">Leer más</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+      </article>
+	  
+	  
+
+    </section>
+	
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
 </body>
 </html>
