@@ -19,6 +19,14 @@
       background-position: center;
       background-repeat: repeat;
     }
+	
+	.navbar1 {
+      margin-bottom: 0;
+      border-radius: 0;
+    /*---fondos de la cabecera---*/
+      background-position: center;
+      background-repeat: repeat;
+    }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
@@ -186,6 +194,36 @@
   
   
   /*--------revento (Pono)---------*/
+  
+  /*----------sprite redes sociales--------*/
+  	.social1, .social2, .social3  {
+		 padding-left: 10px;
+  		 height: 50px;
+ 		 line-height: 40px;
+		 width:50px;
+		 background-image: url("redessociales.png");
+		 background-repeat: no-repeat;
+		}
+		
+		.social1 {
+  		background-position: -50px -50px;
+		}
+		.social2 {
+		  background-position:0 -50px;
+		}
+		.social3 {
+		  background-position: -100px -50px;
+		}
+ 
+	#social a {
+		display: inline-block;
+		padding: 1em 1em;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease;
+	}
+  /*---------------------------------------*/
 
   </style>
 </head>
@@ -222,7 +260,7 @@
 <div class="container-fluid text-center">    
   <div class="row content">
 	<!-- Barra de navegacion lateral derecha-->
-    <nav class="navbar navbar-default sidebar" role="navigation">
+    <nav class="navbar1 navbar-default sidebar" role="navigation">
 		<div class="container-fluid">
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
@@ -235,39 +273,39 @@
 		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
 			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-hdd"></span></a>
 			  <ul class="dropdown-menu forAnimate" role="menu">
-				<li><a href="#">Modificar</a></li>
-				<li><a href="#">Reportar</a></li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">Informes</a></li>
+				<li><a href="#"><a>Placa base</a></li>
+				<li><a href="#"><a>Graficas</a></li>
+				<li><a href="#"><a>Discos duros</a></li>
+				<li><a href="#"><a>Fuente de alimentacion</a></li>
 			  </ul>
 			</li>
 			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-qrcode"></span></a>
 			  <ul class="dropdown-menu forAnimate" role="menu">
-				<li><a href="#">Modificar</a></li>
-				<li><a href="#">Reportar</a></li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">Informes</a></li>
+				<li><a href="#"><a>Diseño gráfico</a></li>
+				<li><a href="#"><a>Programación</a></li>
+				<li><a href="#"><a>Ofimatica</a></li>
+				<li><a href="#"><a>otros</a></li>
 			  </ul>
 			</li>          
 			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perifericos <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perifericos <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-headphones"></span></a>
 			  <ul class="dropdown-menu forAnimate" role="menu">
-				<li><a href="#">Alfombrilla</a></li>
-				<li><a href="#">Auriculares</a></li>
-				<li><a href="#">Ratones</a></li>
-				<li><a href="#">Teclados</a></li>
+				<li><a href="#"><a>Alfombrilla</a></li>
+				<li><a href="#"><a>Auriculares</a></li>
+				<li><a href="#"><a>Ratones</a></li>
+				<li><a href="#"><a>Teclados</a></li>
 			  </ul>
 			</li>        
 			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Noticias <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Noticias <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-bullhorn"></span></a>
 			  <ul class="dropdown-menu forAnimate" role="menu">
-				<li><a href="#">Modificar</a></li>
-				<li><a href="#">Reportar</a></li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">Informes</a></li>
+				<li><a href="#"><a>Actualidad</a></li>
+				<li><a href="#"><a>Mas populares</a></li>
+				<li><a href="#"><a>Analisis</a></li>
+				<li><a href="#"><a>Variadas</a></li>
 			  </ul>
 			</li>
 		  </ul>
@@ -393,8 +431,14 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="navbar container-fluid text-center">
+<p>Sitio web realizado por Pérez-Calvo y Buzón</p>
+		<div id="social">
+				<a href="http://www.facebook.com/" target="_blank" class="social1"></a>
+				<a href="http://www.twitter.com/" target="_blank" class="social2"></a>
+				<a href="http://www.googleplus.com/" target="_blank" class="social3"></a>
+				<a href="#" class="icon-mail"></a></li>			
+		</div>
 </footer>
 
 </body>
